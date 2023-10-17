@@ -35,9 +35,9 @@ import time
 
 class RaspberryPi:
     # Pin definition
-    RST_PIN         = 17
+    RST_PIN         = 23
     DC_PIN          = 25
-    CS_PIN          = 8
+    CS_PIN          = 18
     BUSY_PIN        = 24
 
     def __init__(self):
@@ -47,7 +47,7 @@ class RaspberryPi:
         self.GPIO = RPi.GPIO
 
         # SPI device, bus = 0, device = 0
-        self.SPI = spidev.SpiDev(0, 0)
+        self.SPI = spidev.SpiDev(1, 0)
 
     def digital_write(self, pin, value):
         self.GPIO.output(pin, value)
@@ -145,10 +145,10 @@ class JetsonNano:
         self.GPIO.cleanup()
 
 
-if os.path.exists('/sys/bus/platform/drivers/gpiomem-bcm2835'):
-    implementation = RaspberryPi()
-else:
-    implementation = JetsonNano()
+#if os.path.exists('/sys/bus/platform/drivers/gpiomem-bcm2835'):
+implementation = RaspberryPi()
+# else:
+#   implementation = JetsonNano()
 
 for func in [x for x in dir(implementation) if not x.startswith('_')]:
     setattr(sys.modules[__name__], func, getattr(implementation, func))
