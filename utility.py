@@ -157,7 +157,7 @@ def get_formatted_date(dt, include_time=True):
     yesterday = today - datetime.timedelta(days=1)
     tomorrow = today + datetime.timedelta(days=1)
     next_week = today + datetime.timedelta(days=7)
-    formatter_day = "%a %b %-d"
+    formatter_day = "%a %-d.%-m." # dash removes zero padding
 
     # Display the time in the locale format, if possible
     if include_time:

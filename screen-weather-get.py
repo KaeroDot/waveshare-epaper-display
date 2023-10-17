@@ -169,13 +169,17 @@ def main():
     output_dict = {
         'LOW_ONE': "{}{}".format(str(round(weather['temperatureMin'])), degrees),
         'HIGH_ONE': "{}{}".format(str(round(weather['temperatureMax'])), degrees),
+        'TEMPERATURE_INSTANT': "{}{}".format(str(round(weather['temperatureInstant'])), degrees),
+        'PRESSURE_INSTANT': "{}{}".format(str(round(weather['pressureInstant'])), " Pa"),
+        'HUMIDITY_INSTANT': "{}{}".format(str(round(weather['humidityInstant'])), " %"),
+        'PRECIPITATION': "{}{}".format(str(round(weather['precipitation'])), " mm"),
         'ICON_ONE': weather["icon"],
         'WEATHER_DESC_1': weather_desc[1],
         'WEATHER_DESC_2': weather_desc[2],
         'TIME_NOW_FONT_SIZE': time_now_font_size,
         'TIME_NOW': time_now,
         'HOUR_NOW': datetime.datetime.now().strftime("%-I %p"),
-        'DAY_ONE': datetime.datetime.now().strftime("%b %-d, %Y"),
+        'DAY_ONE': datetime.datetime.now().strftime("%b, %x"),
         'DAY_NAME': datetime.datetime.now().strftime("%A"),
         'ALERT_MESSAGE_VISIBILITY': "visible" if alert_message else "hidden",
         'ALERT_MESSAGE': alert_message
