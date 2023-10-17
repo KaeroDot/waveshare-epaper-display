@@ -60,7 +60,7 @@ def get_datetime_formatted(event_start, event_end, is_all_day_event):
         if start == end:
             day = start_day
         else:
-            day = "{} - {}".format(start_day, end_day)
+            day = "{} – {}".format(start_day, end_day)
     elif type(event_start) == datetime.datetime:
         start_date = event_start
         end_date = event_end
