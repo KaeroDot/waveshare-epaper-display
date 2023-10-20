@@ -3,51 +3,53 @@
   <rect width="800" height="480" id="rect3855" fill="white" />
 
   <g transform="scale(1.2) translate(25 100)" id="currentweather">
+    <tspan style="fill:#00ff00">
     <use href="icons/ICON_ONE.svg" id="currentweathericon" />
+    </tspan>
   </g>
   <text id="tempinstant" x="25" y="330" font-size="38px" style="fill:#ff0000">TEMPERATURE_INSTANT</text>
-  <text id="presshumid"  x="25" y="360" font-size="22" style="">PRESSURE_INSTANT, HUMIDITY_INSTANT</text>
-  <text id="text499" x="25" y="390" font-size="22px" style="font-family:sans-serif">WEATHER_DESC_1</text>
-  <text id="text501" x="25" y="410" font-size="22px" style="font-family:sans-serif">WEATHER_DESC_2</text>
-  <text id="temphighlow" x="25" y="450" font-size="30px" style="">HIGH_ONE/LOW_ONE, PRECIPITATION</text>
+  <text id="presshumid"  x="25" y="360" font-size="22" style="fill:#00ff00">PRESSURE_INSTANT, HUMIDITY_INSTANT</text>
+  <text id="text499" x="25" y="390" font-size="22px" style="fill:#00ff00,font-family:sans-serif">WEATHER_DESC_1</text>
+  <text id="text501" x="25" y="410" font-size="22px" style="fill:#00ff00,font-family:sans-serif">WEATHER_DESC_2</text>
+  <text id="temphighlow" x="25" y="450" font-size="30px" style="fill:#00ff00">HIGH_ONE/LOW_ONE, PRECIPITATION</text>
   <text id="calendarentry1" x="290" y="-3" font-size="27px" style="font-family:sans-serif">
-    <tspan x="290" dy="25" style="fill:#ff0000" id="tspan193">CAL_DATETIME_1</tspan>
-    <tspan style="" x="290" dy="25" id="tspan195"><![CDATA[CAL_DESC_1]]></tspan>
+    <tspan x="290" dy="25" style="fill:#00ff00" id="tspan193">CAL_DATETIME_1</tspan>
+    <tspan style="fill:#ff0000" x="290" dy="25" id="tspan195"><![CDATA[CAL_DESC_1]]></tspan>
   </text>
   <text id="calendarentry2" x="290" y="61" font-size="27px" style="font-family:sans-serif">
-    <tspan x="290" dy="25" style="fill:#ff0000" id="tspan198">CAL_DATETIME_2</tspan>
-    <tspan style="" x="290" dy="25" id="tspan200"><![CDATA[CAL_DESC_2]]></tspan>
+    <tspan x="290" dy="25" style="fill:#00ff00" id="tspan198">CAL_DATETIME_2</tspan>
+    <tspan style="fill:#ff0000" x="290" dy="25" id="tspan200"><![CDATA[CAL_DESC_2]]></tspan>
   </text>
   <text id="calendarentry3" x="290" y="123" font-size="27px" style="font-family:sans-serif">
-    <tspan x="290" dy="25" style="fill:#ff0000" id="tspan203">CAL_DATETIME_3</tspan>
-    <tspan style="" x="290" dy="25" id="tspan205"><![CDATA[CAL_DESC_3]]></tspan>
+    <tspan x="290" dy="25" style="fill:#00ff00" id="tspan203">CAL_DATETIME_3</tspan>
+    <tspan style="fill:#ff0000" x="290" dy="25" id="tspan205"><![CDATA[CAL_DESC_3]]></tspan>
   </text>
   <text id="calendarentry4" x="290" y="183" font-size="27px" style="font-family:sans-serif">
-    <tspan x="290" dy="25" id="tspan208" style="fill:#ff0000">CAL_DATETIME_4</tspan>
-    <tspan style="" x="290" dy="25" id="tspan210"><![CDATA[CAL_DESC_4]]></tspan>
+    <tspan x="290" dy="25" id="tspan208" style="fill:#00ff00">CAL_DATETIME_4</tspan>
+    <tspan style="fill:#ff0000" x="290" dy="25" id="tspan210"><![CDATA[CAL_DESC_4]]></tspan>
   </text>
   <text id="calendarentry5" x="290" y="241" font-size="27px" style="font-family:sans-serif">
-    <tspan x="290" dy="25" id="tspan213" style="fill:#ff0000">CAL_DATETIME_5</tspan>
-    <tspan style="" x="290" dy="25" id="tspan215"><![CDATA[CAL_DESC_5]]></tspan>
+    <tspan x="290" dy="25" id="tspan213" style="fill:#00ff00">CAL_DATETIME_5</tspan>
+    <tspan style="fill:#ff0000" x="290" dy="25" id="tspan215"><![CDATA[CAL_DESC_5]]></tspan>
   </text>
   <text id="calendarentry6" x="290" y="298" font-size="27px" style="font-family:sans-serif">
-    <tspan x="290" dy="25" id="tspan218" style="fill:#ff0000">CAL_DATETIME_6</tspan>
-    <tspan style="" x="290" dy="25" id="tspan220"><![CDATA[CAL_DESC_6]]></tspan>
+    <tspan x="290" dy="25" id="tspan218" style="fill:#00ff00">CAL_DATETIME_6</tspan>
+    <tspan style="fill:#ff0000" x="290" dy="25" id="tspan220"><![CDATA[CAL_DESC_6]]></tspan>
   </text>
   <text id="calendarentry7" x="290" y="356" font-size="27px" style="font-family:sans-serif">
-    <tspan x="290" dy="25" id="tspan305" style="fill:#ff0000">CAL_DATETIME_7</tspan>
-    <tspan style="" x="290" dy="25" id="tspan307"><![CDATA[CAL_DESC_7]]></tspan>
+    <tspan x="290" dy="25" id="tspan305" style="fill:#00ff00">CAL_DATETIME_7</tspan>
+    <tspan style="fill:#ff0000" x="290" dy="25" id="tspan307"><![CDATA[CAL_DESC_7]]></tspan>
   </text>
   <text id="calendarentry8" x="290" y="416" font-size="27px" style="font-family:sans-serif">
-    <tspan x="290" dy="25" id="tspan308" style="fill:#ff0000">CAL_DATETIME_8</tspan>
-    <tspan style="" x="290" dy="25" id="tspan310"><![CDATA[CAL_DESC_8]]></tspan>
+    <tspan x="290" dy="25" id="tspan308" style="fill:#00ff00">CAL_DATETIME_8</tspan>
+    <tspan style="fill:#ff0000" x="290" dy="25" id="tspan310"><![CDATA[CAL_DESC_8]]></tspan>
   </text>
-  <text id="textday" x="25" y="33" font-size="20px" style="">DAY_NAME</text>
+  <text id="textday" x="25" y="33" font-size="20px" style="fill:#00ff00">DAY_NAME</text>
   <text id="textdate" x="25" y="60" font-size="20px" style="">
-    <tspan style="" id="tspan312">DAY_ONE</tspan>
+    <tspan style="fill:#00ff00" id="tspan312">DAY_ONE</tspan>
   </text>
   <text id="texttime" x="5" y="475" font-size="10px" style="">
-    <tspan style="" id="tspan530">TIME_NOW</tspan>
+    <tspan style="fill:#00ff00" id="tspan530">TIME_NOW</tspan>
   </text>
   <use id="customdata" href="screen-output-custom-temp.svg" />
   <rect width="110%" height="40" x="0" y="440" style="fill:rgb(255,255,255);stroke-width:3;stroke:rgb(0,0,0);background-color: white;" visibility="ALERT_MESSAGE_VISIBILITY" />

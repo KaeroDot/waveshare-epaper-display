@@ -40,8 +40,10 @@ try:
     logging.info("Display image file on screen")
 
     if waveshare_epd75_version == "2B":
-        Limage_Other = Image.new('1', (epd.height, epd.width), 255)  # 255: clear the frame
-        epd.display(epd.getbuffer(Himage), epd.getbuffer(Limage_Other))
+        # split the image by color layers to separate what should be shown in
+        # black and what in red on the display:
+        (red, green, blue) = Himage.split()
+        epd.display(epd.getbuffer(red), epd.getbuffer(green))
     else:
         epd.display(epd.getbuffer(Himage))
     epd.sleep()
