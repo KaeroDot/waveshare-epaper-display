@@ -13,17 +13,18 @@ ttl = float(os.getenv("CALENDAR_TTL", 1 * 60 * 60))
 
 class ICSCalendar(BaseCalendarProvider):
 
-    def __init__(self, ics_calendar_url, max_event_results, from_date, to_date):
+    def __init__(self, ics_calendar_url, max_event_results, from_date, to_date, index):
         self.ics_calendar_url = ics_calendar_url
         self.max_event_results = max_event_results
         self.from_date = from_date
         self.to_date = to_date
+        self.index = index
 
     def get_calendar_events(self) -> list[CalendarEvent]:
         calendar_events = []
-        ics_calendar_pickle = 'cache_ics.pickle'
+        ics_calendar_pickle = 'cache_ics_{}.pickle'.format(self.index)
         if is_stale(os.getcwd() + "/" + ics_calendar_pickle, ttl):
-            logging.debug("Pickle is stale, fetching ICS Calendar")
+            logging.debug("Cache of ICS calendar {} is stale, fetching.".format(self.index))
 
             ics_events = icalevnt.icalevents.events(self.ics_calendar_url, start=self.from_date, end=self.to_date)
             ics_events.sort(key=lambda x: x.start.replace(tzinfo=None))
@@ -48,7 +49,7 @@ class ICSCalendar(BaseCalendarProvider):
             with open(ics_calendar_pickle, 'wb') as cal:
                 pickle.dump(calendar_events, cal)
         else:
-            logging.info("Found in cache")
+            logging.info("ICS calendar {} found in cache".format(self.index))
             with open(ics_calendar_pickle, 'rb') as cal:
                 calendar_events = pickle.load(cal)
 
