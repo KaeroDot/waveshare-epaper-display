@@ -1,3 +1,18 @@
+# IMPORTANT note for personal_changes branch
+This branch `personal_changes` is only to keep my modifications probably not
+usefull to anyone other:
+- change to SPI1 because SPI0 is burned in my RPi,
+- proper delimiter in date events
+- new template no 5 and czech localisation,
+- epaper driver submodule removed and code is direct part of repository,
+- ensure epaper driver works in raspberry mode and not jetson nano mode, (this was fixed in epaper driver by mendhak, but the commit was not merged into the waveshare repository)<
+- fixed showing of red because in my case the original code did not worked (I have no idea how the previous code could work at all).
+- fixed issue with lxml0
+
+I will keep rebasing this branch to the `multicalendar` branch.
+
+-----
+
 # IMPORTANT note for multicalendar branch
 This branch `multicalendar` can read multiple calendars, merging them and
 showing it on the display. Changes in the `env.sh` are pretty self-explanatory,
