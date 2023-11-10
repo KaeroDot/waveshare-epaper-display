@@ -1,3 +1,16 @@
+# IMPORTANT note for multicalendar branch
+This branch `multicalendar` can read multiple calendars, merging them and
+showing it on the display. Changes in the `env.sh` are pretty self-explanatory,
+but first you must understand how the settings works in the original single
+calendar version by mendhak. So please try first mendhak version and than, if
+needed, change to this branch.
+
+I will keep rebasing this branch on the original mendhak version.
+
+Original readme follows below this line.
+
+-----
+
 Instructions on setting up a Raspberry Pi Zero WH with a Waveshare ePaper 7.5 Inch HAT.
 The screen will display date, time, weather icon with high and low, and calendar entries.
 
